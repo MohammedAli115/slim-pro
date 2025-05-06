@@ -1,0 +1,64 @@
+.scroll-btn {
+    transition: transform 0.5s ease;
+}
+
+.slide-up {
+    animation: floatUp 2s infinite ease-in-out;
+}
+
+.slide-down {
+    animation: floatDown 2s infinite ease-in-out;
+}
+
+/* الحركات */
+@keyframes floatUp {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes floatDown {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+}
+
+/* موجات واتساب */
+.wave-container {
+    position: relative;
+    display: inline-block;
+}
+.scroll-btn.whatsapp {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+}
+
+.wave {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    background: #77d4f3;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse 2s infinite;
+    z-index: -1;
+}
+
+.wave:nth-child(2) {
+    animation-delay: 0.5s;
+}
+.wave:nth-child(3) {
+    animation-delay: 1s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(0.5);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.8);
+        opacity: 0;
+    }
+}

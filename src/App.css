@@ -1,0 +1,84 @@
+body {
+    font-family: "Cairo", sans-serif !important;
+    direction: rtl !important;
+    background-color: #EFEFEF !important;
+    color: #222222 !important;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+
+.navbar-nav li a {
+    transition: all 0.3s ease-in-out !important;
+    position: relative !important;
+}
+.navbar-nav li a::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0078d7;
+}
+.navbar-nav li a:hover::before {
+    width: 100%;
+    transition: all 0.2s ease-in-out !important;
+}
+.navbar-nav li a:hover {
+    color: #0078d7 !important;
+}
+
+.home-page  {
+    position: relative;
+}
+.home-page::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b3;
+}
+
+#contact input 
+,#contact textarea 
+,#contact select {
+    border: 1px solid #ccc !important;
+    border-radius: 5px !important;
+    box-sizing: border-box !important;
+    transition: all 0.2s !important;
+}
+#contact input:focus ,
+#contact textarea:focus ,#contact select:focus {
+    box-shadow: 0 0 10px #1292fa !important;
+}
+
+#services .card {
+    /* transition: all .2s ease-in-out; */
+    box-shadow: 0 0 2px #1292fa !important;
+    background: linear-gradient(to right, #ffffff, #0996e9) !important;
+    background-color: #0078d7 !important;
+
+}
+
+#services .card:hover {
+    transform: scale(1.1);
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
