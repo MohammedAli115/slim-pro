@@ -12,6 +12,7 @@ import Footer from './Components/Footer';
 import Map from './Components/Map';
 import BtnUpToHom from './Components/BtnUpToHom';
 import Activities from './Components/Activities';
+import BtnIconeWhatsApp from './Components/BtnIconeWhatsApp';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
               <Map />
               <Footer />
               <BtnUpToHom />
+              <BtnIconeWhatsApp />
             </>
           } />
           <Route path="/services/:id" element={<ServicesDetails />} />

@@ -1,0 +1,39 @@
+.footer-icon {
+  font-size: 2rem;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.footer-icon:hover {
+  transform: scale(1.2);
+}
+
+.footer-icon.facebook:hover {
+  color: #1877f2;
+}
+.footer-icon.tiktok:hover {
+  color: #ff0050;
+}
+.footer-icon.instagram:hover {
+  color: #e4405f;
+}
+.footer-icon.youtube:hover {
+  color: #ff0000;
+}
+.footer-icon.phone:hover {
+  color: #00ff88;
+}
+
+.footer-link {
+  transition: color 0.3s ease;
+}
+.footer-link:hover {
+  color: #1abafd;
+}
+
+.footer-logo {
+  transition: transform 0.3s ease;
+}
+.footer-logo:hover {
+  transform: rotate(10deg) scale(1.1);
+}

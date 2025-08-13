@@ -1,6 +1,6 @@
 .container {
-  height: 294px;
-  perspective: 900px;
+  height: 220px;
+  perspective: 600px;
 }
 
 .card {
@@ -16,6 +16,7 @@
 .container:hover > .card {
   cursor: pointer;
   transform: rotateY(180deg) rotateZ(180deg);
+  box-shadow: 0 0 5px 5px #00ACE7;
 }
 
 .front, .back {
@@ -23,7 +24,7 @@
   width: 100%;
   border-radius: 2rem;
   position: absolute;
-  box-shadow: 0 0 5px 2px #00ACE7;
+  box-shadow: 0 0 5px 2px #ccc;
   backface-visibility: hidden;
   color: aliceblue;
   background: linear-gradient(-135deg, 
