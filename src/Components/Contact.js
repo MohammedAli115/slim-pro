@@ -40,6 +40,7 @@ function Contact() {
     };
 
     return (
+        
         <motion.div
             className='container py-5'
             id='contact'

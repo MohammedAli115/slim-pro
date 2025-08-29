@@ -168,7 +168,7 @@ function About() {
         <h2 className="mb-4 fs-1 fw-bolder" style={{ lineHeight: "1.8" }}>
           من نحن
         </h2>
-        <div className="smile-container d-none d-md-block">
+        <div className="smile-container">
           <svg
             viewBox="0 0 200 100"
             xmlns="http://www.w3.org/2000/svg"
@@ -187,7 +187,7 @@ function About() {
       <div className="container">
         <div className="row align-items-center">
           <motion.div
-            className="col-md-6 text-center text-md-end"
+            className="col-md-6"
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}

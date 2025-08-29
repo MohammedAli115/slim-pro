@@ -6,11 +6,7 @@ import styles from "../Services.module.css";
 
 const Services = () => {
   return (
-    <div
-      className="container py-5 my-5"
-      id="services"
-      style={{ borderTop: "1px solid #ccc" }}
-    >
+    <div className="container py-5 my-5" id="services">
       <div className="head text-center mb-4">
         <div className="d-flex flex-column align-items-center">
           <h2 className="mb-2 fs-1 fw-bolder">الخدمات</h2>
@@ -60,7 +56,7 @@ const Services = () => {
                     className={styles.backHeading}
                   />
                   <Link
-                    to={`/services/${service.id}`}
+                    to={`/articles/${service.slug}`}
                     type="button"
                     className="btn btn-outline-dark -3"
                   >
