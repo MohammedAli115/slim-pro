@@ -16,9 +16,10 @@ const Prosthodontics = () => {
         />
       </Helmet> */}
 
-      <h1 className="mb-4 text-center">
-        تركيبات الأسنان – استعادة الوظيفة والمظهر بأعلى جودة
+      <h1 className="mb-4 text-center" style={{ color: "#00b3ff" }}>
+        تركيبات الأسنان
       </h1>
+      <h5 className="text-center mb-5">استعادة الوظيفة والمظهر بأعلى جودة</h5>
       <p className="text-center text-muted">
         مركز سليم سمايل – رام الله | ابتسامة متكاملة تبدأ من هنا
       </p>

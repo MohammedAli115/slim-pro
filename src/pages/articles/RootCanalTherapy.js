@@ -20,10 +20,10 @@ const RootCanalTherapy = () => {
       </Helmet>
       */}
 
-      <h1 className="mb-4 text-center">
-        علاجات العصب السني – إنقاذ السن من الداخل
+      <h1 className="mb-4 text-center" style={{ color: "#00b3ff" }}>
+        علاجات العصب السني
       </h1>
-
+      <h5 className="text-center mb-5"> الفرصه الاخيره قبل فقدان السن </h5>
       <p className="text-center text-muted">
         بقلم: د. آية الفراحين – أخصائية علاج جذور الأسنان
       </p>

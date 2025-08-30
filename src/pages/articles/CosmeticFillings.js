@@ -20,9 +20,11 @@ const CosmeticFillings = () => {
       </Helmet>
       */}
 
-      <h1 className="mb-4 text-center">
-        الحشوات التجميلية – ترميم الأسنان بجمال طبيعي
+      <h1 className="mb-4 text-center" 
+      style={{ color: "#00b3ff" }}>
+        الحشوات التجميلية
       </h1>
+      <h5 className="text-center mb-5">ترميم الأسنان بجمال طبيعي</h5>
 
       <p className="text-center text-muted">
         بقلم: د. آية الفراحين – أخصائية طب الأسنان التجميلي

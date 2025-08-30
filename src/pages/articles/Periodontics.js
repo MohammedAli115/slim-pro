@@ -3,9 +3,12 @@ import { HashLink } from "react-router-hash-link";
 const Periodontics = () => {
   return (
     <div className="container py-5 mt-5">
-      <h1 className="mb-4 text-center">علاج أمراض اللثة – مركز سليم سمايل</h1>
+      <h1 className="mb-4 text-center" style={{ color: "#00b3ff" }}>
+        علاج أمراض اللثة
+      </h1>
+      <h5 className="text-center mb-5">صحة لثتك هي أساس ابتسامتك</h5>
       <p className="text-center text-muted">
-        رام الله | ابتسامة صحية تبدأ من هنا
+        مركز سليم سمايل – رام الله | ابتسامة متكاملة تبدأ من هنا
       </p>
 
       <h2 className="mt-4">ما هي أمراض اللثة؟</h2>

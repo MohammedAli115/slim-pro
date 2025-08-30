@@ -1,51 +1,3 @@
-// export const services = [
-//   {
-//     id: 1,
-//     title: "تقويم الاسنان",
-//     image: "/assets/services-image/braces.jpg",
-//   },
-//   {
-//     id: 2,
-//     title: "زراعة الاسنان",
-//     image: "/assets/services-image/dental-implant.jpg",
-//     article: "المقال هيكون هنا",
-//   },
-//   {
-//     id: 3,
-//     title: "تركيبات الاسنان",
-//     image: "/assets/services-image/dental-crowns.jpg",
-//     article: "المقال هيكون هنا",
-//   },
-//   {
-//     id: 4,
-//     title: "القشور الزخرفية",
-//     image: "/assets/services-image/decorative-veneers.jpg",
-//     article: "المقال هيكون هنا",
-//   },
-//   {
-//     id: 5,
-//     title: "أمراض اللثة",
-//     image: "/assets/services-image/gum-diseases.jpg",
-//     article: "المقال هيكون هنا",
-//   },
-//   {
-//     id: 6,
-//     title: "خلع أضراس العقل المطمورة",
-//     image: "/assets/services-image/impacted-wisdom-teeth-extraction.jpg",
-//     article: "المقال هيكون هنا",
-//   },
-//   {
-//     id: 7,
-//     title: "الحشوات التجميلية والعلاجات الوقائية",
-//     image: "/assets/services-image/cosmetic-fillings-preventive-treatments.jpg",
-//     article: "المقال هيكون هنا",
-//   },
-//   {
-//     id: 8,
-//     title: "علاجات العصب",
-//     image: "/assets/services-image/root-canal-treatments.jpg",
-//   },
-// ];
 export const services = [
   {
     id: 1,
@@ -94,5 +46,11 @@ export const services = [
     title: "علاجات العصب",
     image: "/assets/services-image/root-canal-treatments.jpg",
     slug: "root-canal",
+  },
+  {
+    id: 9,
+    title: "زراعة الأسنان بالتخدير الكامل",
+    image: "/assets/services-image/implantImage.jpg",
+    slug: "full-anesthesia-implant",
   },
 ];

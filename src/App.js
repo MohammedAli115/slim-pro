@@ -21,6 +21,7 @@ import CosmeticFillings from "./pages/articles/CosmeticFillings";
 import RootCanalTherapy from "./pages/articles/RootCanalTherapy";
 import NotFound from "./Components/NotFound";
 import Periodontics from "./pages/articles/Periodontics";
+import FullAnesthesiaImplant from "./pages/articles/FullAnesthesiaImplant";
 
 function App() {
   return (
@@ -60,6 +61,10 @@ function App() {
           />
           <Route path="/articles/root-canal" element={<RootCanalTherapy />} />
           <Route path="/articles/gum-diseases" element={<Periodontics />} />
+          <Route
+            path="/articles/full-anesthesia-implant"
+            element={<FullAnesthesiaImplant />}
+          />
         </Routes>
         <Footer />
       </Router>

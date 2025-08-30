@@ -17,9 +17,8 @@ const Veneers = () => {
         />
       </Helmet> */}
 
-      <h1 className="mb-4 text-center">
-        القشور الخزفية (الفينير) – سر الابتسامة المثالية
-      </h1>
+      <h1 className="mb-4 text-center" style={{ color: "#00b3ff" }}>القشور الخزفية (الفينير)</h1>
+      <h5 className="text-center mb-5">سر الابتسامة المثالية</h5>
       <p className="text-center text-muted">
         مركز سليم سمايل – رام الله | فن التجميل في طب الأسنان
       </p>

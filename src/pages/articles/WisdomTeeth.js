@@ -20,9 +20,10 @@ const WisdomTeeth = () => {
       </Helmet>
       */}
 
-      <h1 className="mb-4 text-center">
-        أضراس العقل المطمورة وخلعها الجراحي – متى ولماذا؟
+      <h1 className="mb-4 text-center" 
+      style={{color :"#00b3ff"}}>أضراس العقل المطمورة وخلعها الجراحي – متى ولماذا؟
       </h1>
+      <h5 className="text-center mb-5"> راحتك أولويتنا </h5>
 
       <p className="text-center text-muted">
         بقلم: د. سعدالله عمرو – مركز سليم سمايل لطب وتجميل الأسنان – رام الله
