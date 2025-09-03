@@ -1,14 +1,15 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
-// import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 
 const RootCanalTherapy = () => {
   return (
     <div className="container py-5 mt-5">
-      {/* Uncomment Helmet block if react-helmet-async is installed */}
-      {/*
+      {/* ✅ Helmet SEO */}
       <Helmet>
-        <title>علاجات العصب السني – إنقاذ السن من الداخل | مركز سليم سمايل – رام الله</title>
+        <title>
+          علاجات العصب السني – إنقاذ السن من الداخل | مركز سليم سمايل – رام الله
+        </title>
         <meta
           name="description"
           content="تعرف على خطوات ومميزات علاج العصب السني (Root Canal Therapy) في مركز سليم سمايل – رام الله بإشراف د. آية الفراحين، باستخدام أحدث التقنيات لإنقاذ الأسنان المصابة."
@@ -17,8 +18,60 @@ const RootCanalTherapy = () => {
           name="keywords"
           content="علاج العصب, علاج جذور الأسنان, Root Canal Therapy, التهاب العصب, تسوس عميق, مركز سليم سمايل, رام الله"
         />
+
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="علاجات العصب السني – مركز سليم سمايل"
+        />
+        <meta
+          property="og:description"
+          content="اكتشف أحدث تقنيات علاج العصب السني في مركز سليم سمايل – رام الله مع د. آية الفراحين."
+        />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:image"
+          content="https://slimsmile.ps/images/root-canal.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://slimsmile.ps/articles/root-canal-therapy"
+        />
+
+        {/* FAQ Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "ما هو علاج العصب (Root Canal Therapy)؟",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "هو إجراء طبي لإنقاذ الأسنان المصابة بالتهاب أو عدوى في العصب الداخلي، يتضمن إزالة العصب المصاب وتنظيف القنوات وحشوها لحماية السن.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "متى نحتاج إلى علاج العصب؟",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "نحتاج لعلاج العصب عند وجود ألم حاد، حساسية شديدة، تغير لون السن، خراج أو تسوس عميق وصل إلى لب السن.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "كم عدد الجلسات المطلوبة لعلاج العصب؟",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "معظم الحالات تُعالج في جلسة واحدة، بينما الحالات المعقدة قد تحتاج إلى جلستين أو ثلاث.",
+                },
+              },
+            ],
+          })}
+        </script>
       </Helmet>
-      */}
 
       <h1 className="mb-4 text-center" style={{ color: "#00b3ff" }}>
         علاجات العصب السني

@@ -2,11 +2,73 @@ import React from "react";
 import { services } from "./ServicesData";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import styles from "../Services.module.css";
 
 const Services = () => {
   return (
     <div className="container py-5 my-5" id="services">
+      {/* Helmet SEO */}
+      <Helmet>
+        <title>الخدمات | مركز سليم سمايل – رام الله</title>
+        <meta
+          name="description"
+          content="اكتشف خدمات مركز سليم سمايل في رام الله: زراعة الأسنان، تجميل الأسنان، القشور الخزفية، التبييض، وغيرها بأحدث التقنيات الطبية."
+        />
+        <meta
+          name="keywords"
+          content="خدمات الأسنان, زراعة الأسنان, تجميل الأسنان, القشور الخزفية, تبييض الأسنان, سليم سمايل, رام الله"
+        />
+
+        {/* OG Tags */}
+        <meta
+          property="og:title"
+          content="الخدمات | مركز سليم سمايل – رام الله"
+        />
+        <meta
+          property="og:description"
+          content="تعرف على جميع خدمات مركز سليم سمايل في رام الله، باستخدام أحدث الأجهزة الطبية وفريق من الأخصائيين."
+        />
+        <meta
+          property="og:image"
+          content="https://slimsmile.ps/images/services.jpg"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="ar_AR" />
+
+        {/* Services Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            serviceType: "خدمات طب وتجميل الأسنان",
+            provider: {
+              "@type": "MedicalBusiness",
+              name: "مركز سليم سمايل",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "رام الله",
+                addressCountry: "PS",
+              },
+            },
+            hasOfferCatalog: {
+              "@type": "OfferCatalog",
+              name: "خدماتنا",
+              itemListElement: services.map((service) => ({
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: service.title,
+                  url: `/articles/${service.slug}`,
+                  image: service.image,
+                },
+              })),
+            },
+          })}
+        </script>
+      </Helmet>
+
+      {/* UI Content */}
       <div className="head text-center mb-4">
         <div className="d-flex flex-column align-items-center">
           <h2 className="mb-2 fs-1 fw-bolder">الخدمات</h2>
@@ -25,6 +87,7 @@ const Services = () => {
           </svg>
         </div>
       </div>
+
       <div className="row">
         {services.map((service) => (
           <div
@@ -33,8 +96,8 @@ const Services = () => {
           >
             <motion.div
               className={styles.container}
-              initial={{ opacity: 0, scale: 0.5, y: 0 }}
-              whileInView={{ opacity: 1, scale: 1, y: 0 }}
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: false, amount: 0.3 }}
               transition={{ duration: 0.3, ease: "linear" }}
             >
@@ -57,8 +120,7 @@ const Services = () => {
                   />
                   <Link
                     to={`/articles/${service.slug}`}
-                    type="button"
-                    className="btn btn-outline-dark -3"
+                    className="btn btn-outline-dark"
                   >
                     أقرأ المزيد...
                   </Link>

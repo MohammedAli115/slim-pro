@@ -1,13 +1,77 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 
 function Activities() {
   return (
     <div
       className="activities my- py-5"
       id="activities"
-      style={{ borderBottom: "1px solid #ccc" , overflow : "hidden" }}
+      style={{ borderBottom: "1px solid #ccc", overflow: "hidden" }}
     >
+      {/*  Helmet SEO */}
+      <Helmet>
+        <title>الأنشطة المجتمعية | مركز سليم سمايل – رام الله</title>
+        <meta
+          name="description"
+          content="اطلع على أنشطة مركز سليم سمايل في رام الله، مثل الزيارات التوعوية للمدارس وحملات التثقيف الصحي لصحة الفم والأسنان."
+        />
+        <meta
+          name="keywords"
+          content="أنشطة مركز سليم سمايل, صحة الأسنان, توعية طلابية, رام الله, حملات تثقيف صحي, مبادرات مجتمعية, صحة الفم"
+        />
+
+        {/* OG Tags */}
+        <meta
+          property="og:title"
+          content="الأنشطة المجتمعية | مركز سليم سمايل – رام الله"
+        />
+        <meta
+          property="og:description"
+          content="مبادرات مركز سليم سمايل لدعم المجتمع من خلال الزيارات التوعوية للمدارس والفحوصات الطبية وخدمات صحة الفم."
+        />
+        <meta
+          property="og:image"
+          content="https://slimsmile.ps/images/activities-cover.jpg"
+        />
+        <meta property="og:type" content="article" />
+        <meta property="og:locale" content="ar_AR" />
+
+        {/* FAQ Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "ما الهدف من الأنشطة المجتمعية لمركز سليم سمايل؟",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "الهدف هو رفع الوعي بأهمية صحة الفم والأسنان بين الأطفال والشباب من خلال محاضرات توعوية وفحوصات مجانية.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "هل يقدم المركز فحوصات للطلاب؟",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "نعم، يتم إجراء فحوصات طبية شاملة للطلاب للكشف المبكر عن مشاكل الأسنان وتقديم الإرشادات المناسبة.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "كيف يشجع المركز الطلاب على زيارة طبيب الأسنان؟",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "من خلال دمج الأنشطة الترفيهية مثل حضور مهرج أثناء الزيارة، لكسر حاجز الخوف وجعل التجربة إيجابية.",
+                },
+              },
+            ],
+          })}
+        </script>
+      </Helmet>
+
       <div className="container">
         <div className="head text-center mb-4">
           <div className="d-flex flex-column align-items-center">
@@ -29,7 +93,7 @@ function Activities() {
         </div>
 
         <div className="row">
-          {/*TEXT*/}
+          {/* TEXT */}
           <motion.div
             className="col-lg-6 col-md-12 text-end"
             style={{ letterSpacing: "1.2px", lineHeight: "30px" }}
@@ -61,7 +125,7 @@ function Activities() {
             </p>
           </motion.div>
 
-          {/*VIDEO */}
+          {/* VIDEO */}
           <motion.div
             className="video col-lg-6 col-md-12"
             initial={{ opacity: 0, x: -100 }}
@@ -75,11 +139,12 @@ function Activities() {
               autoPlay
               loop
               controls
-              loading="lazy"
+              playsInline
+              preload="metadata"
               style={{ width: "100%", maxHeight: "400px", objectFit: "cover" }}
             >
               <source src="/assets/video/active-video.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
+              متصفحك لا يدعم تشغيل الفيديو.
             </video>
           </motion.div>
         </div>

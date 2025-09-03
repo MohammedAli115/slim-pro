@@ -1,23 +1,82 @@
 import React from "react";
-// import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 import { HashLink } from "react-router-hash-link";
 
 const Veneers = () => {
   return (
     <div className="container py-5 mt-5">
-      {/* <Helmet>
-        <title>القشور الخزفية (الفينير) في رام الله | مركز سليم سمايل</title>
+      {/* ✅ Helmet SEO */}
+      <Helmet>
+        <title>
+          القشور الخزفية (الفينير) – سر الابتسامة المثالية | مركز سليم سمايل –
+          رام الله
+        </title>
         <meta
           name="description"
-          content="اكتشف القشور الخزفية (Veneers) في مركز سليم سمايل – رام الله. الحل الأمثل لابتسامة هوليوودية طبيعية: فينير البورسلان، الإيماكس، والزركونيا."
+          content="احصل على ابتسامة هوليودية طبيعية مع القشور الخزفية (الفينير) في مركز سليم سمايل – رام الله. حلول متقدمة لتصحيح شكل الأسنان ولونها بمواد عالية الجودة."
         />
         <meta
           name="keywords"
-          content="القشور الخزفية, الفينير, فينير الأسنان, هوليوود سمايل, رام الله, تجميل الأسنان, مركز سليم سمايل"
+          content="فينير, القشور الخزفية, ابتسامة هوليودية, تجميل الأسنان, مركز سليم سمايل, رام الله, Veneers"
         />
-      </Helmet> */}
 
-      <h1 className="mb-4 text-center" style={{ color: "#00b3ff" }}>القشور الخزفية (الفينير)</h1>
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="القشور الخزفية (الفينير) – مركز سليم سمايل"
+        />
+        <meta
+          property="og:description"
+          content="تعرف على أنواع وخطوات القشور الخزفية (Veneers) مع مركز سليم سمايل – رام الله، سر الابتسامة المثالية."
+        />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:image"
+          content="https://slimsmile.ps/images/veneers.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://slimsmile.ps/articles/veneers"
+        />
+
+        {/* FAQ Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "ما هي القشور الخزفية (Veneers)؟",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "القشور الخزفية هي عدسات تجميلية رقيقة توضع على الأسنان لتصحيح اللون والشكل والحجم، والحصول على ابتسامة طبيعية وجذابة.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "متى أحتاج للفينير؟",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "يُنصح بالفينير عند وجود تصبغات لا تستجيب للتبييض، أو فراغات بين الأسنان، أو عدم تناسق في الشكل، أو تآكل الأسنان.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "كم تدوم القشور الخزفية؟",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "مع العناية الجيدة يمكن أن تدوم القشور الخزفية لسنوات طويلة، حيث تتميز بمقاومتها للتصبغات والمتانة العالية.",
+                },
+              },
+            ],
+          })}
+        </script>
+      </Helmet>
+
+      <h1 className="mb-4 text-center" style={{ color: "#00b3ff" }}>
+        القشور الخزفية (الفينير)
+      </h1>
       <h5 className="text-center mb-5">سر الابتسامة المثالية</h5>
       <p className="text-center text-muted">
         مركز سليم سمايل – رام الله | فن التجميل في طب الأسنان

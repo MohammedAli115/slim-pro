@@ -1,8 +1,92 @@
+import React from "react";
 import { HashLink } from "react-router-hash-link";
+import { Helmet } from "react-helmet-async";
 
 const Periodontics = () => {
   return (
     <div className="container py-5 mt-5">
+      {/* SEO & OG Tags */}
+      <Helmet>
+        <title>
+          علاج أمراض اللثة – صحة لثتك أساس ابتسامتك | مركز سليم سمايل – رام الله
+        </title>
+        <meta
+          name="description"
+          content="علاج أمراض اللثة مثل الالتهاب، التراجع، وانحسار اللثة بخبرة عالية وتقنيات حديثة. مركز سليم سمايل – رام الله يقدم علاجًا متكاملاً للحفاظ على صحة لثتك وابتسامتك."
+        />
+        <meta
+          name="keywords"
+          content="أمراض اللثة, التهاب اللثة, علاج اللثة, تراجع اللثة, قص اللثة, علاج ابتسامة لثوية, سليم سمايل, رام الله"
+        />
+
+        {/* OG Tags */}
+        <meta
+          property="og:title"
+          content="علاج أمراض اللثة – صحة لثتك أساس ابتسامتك | مركز سليم سمايل – رام الله"
+        />
+        <meta
+          property="og:description"
+          content="تعرف على خدمات علاج أمراض اللثة مثل التنظيف العميق، قص وتشكيل اللثة، علاج التراجع، والجراحة التجميلية في مركز سليم سمايل – رام الله."
+        />
+        <meta
+          property="og:image"
+          content="https://via.placeholder.com/800x450.png?text=Gum+Treatment+Periodontics"
+        />
+        <meta property="og:type" content="article" />
+        <meta property="og:locale" content="ar_AR" />
+
+        {/* FAQ Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "ما هي أمراض اللثة الشائعة؟",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "تشمل أمراض اللثة: التهاب اللثة، التهاب دواعم السن، تراجع وانحسار اللثة، والمشاكل الجمالية مثل الابتسامة اللثوية.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "ما هي أعراض أمراض اللثة؟",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "الأعراض تشمل نزيف عند التفريش، انتفاخ أو احمرار اللثة، رائحة فم كريهة، تراجع اللثة، وحركة الأسنان في المراحل المتقدمة.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "كيف يتم علاج أمراض اللثة في مركز سليم سمايل؟",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "نقدم خدمات مثل: تنظيف عميق، قص وتشكيل اللثة، علاج تراجع اللثة عبر ترقيع، جراحات إعادة بناء العظم، والجراحة التجميلية للثة.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "ما العوامل التي تزيد من خطورة أمراض اللثة؟",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "من العوامل: التدخين، إهمال تنظيف الأسنان، السكري غير المضبوط، العوامل الوراثية، والحمل.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "لماذا أختار مركز سليم سمايل لعلاج أمراض اللثة؟",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "لأننا نقدم خبرة متخصصة، أحدث التقنيات، متابعة دقيقة لكل مريض، مع تركيز على الجانب العلاجي والتجميلي.",
+                },
+              },
+            ],
+          })}
+        </script>
+      </Helmet>
+
+      {/* Page Content */}
       <h1 className="mb-4 text-center" style={{ color: "#00b3ff" }}>
         علاج أمراض اللثة
       </h1>

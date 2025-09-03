@@ -1,14 +1,15 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
-// import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 
 const FullAnesthesiaImplant = () => {
   return (
     <div className="container py-5 mt-5">
-      {/* Uncomment Helmet block if react-helmet-async is installed */}
-      {/* 
+      {/* SEO & OG Tags */}
       <Helmet>
-        <title>زراعة الأسنان بالتخدير الكامل | مركز سليم سمايل – رام الله</title>
+        <title>
+          زراعة الأسنان بالتخدير الكامل | مركز سليم سمايل – رام الله
+        </title>
         <meta
           name="description"
           content="نوفر خدمة زراعة الأسنان تحت التخدير الكامل لراحة وأمان المريض، بالتعاون مع نخبة من المستشفيات الفلسطينية المجهزة بأحدث التقنيات الطبية."
@@ -17,11 +18,62 @@ const FullAnesthesiaImplant = () => {
           name="keywords"
           content="زراعة الأسنان, تخدير كامل, مركز سليم سمايل, رام الله, ابتسامة, أسنان, مستشفيات"
         />
-      </Helmet>
-      */}
 
-      <h1 className="mb-4 text-center" 
-      style={{ color: "#00b3ff" }}>زراعة الأسنان بالتخدير الكامل</h1>
+        {/* OG Tags */}
+        <meta
+          property="og:title"
+          content="زراعة الأسنان بالتخدير الكامل | مركز سليم سمايل – رام الله"
+        />
+        <meta
+          property="og:description"
+          content="زراعة الأسنان تحت التخدير الكامل بأعلى درجات الأمان والراحة بالتعاون مع مستشفيات معتمدة – مركز سليم سمايل، رام الله."
+        />
+        <meta
+          property="og:image"
+          content="https://via.placeholder.com/800x450.png?text=Full+Anesthesia+Dental+Implants"
+        />
+        <meta property="og:type" content="article" />
+        <meta property="og:locale" content="ar_AR" />
+
+        {/* FAQ Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "من يناسبهم التخدير الكامل في زراعة الأسنان؟",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "يناسب المرضى الذين يعانون من قلق شديد أو حساسية مفرطة للألم أو من يحتاجون لزراعة عدة أسنان دفعة واحدة.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "ما مزايا زراعة الأسنان تحت التخدير الكامل؟",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "يوفر راحة تامة أثناء العملية، يقلل الوقت المطلوب للزراعة، ويُجرى في بيئة آمنة مجهزة بأحدث المعدات الطبية.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "أين يتم إجراء عملية زراعة الأسنان تحت التخدير الكامل؟",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "يتم إجراؤها في مستشفيات معتمدة ومجهزة بالكامل بالتعاون مع مركز سليم سمايل لضمان أعلى درجات الأمان.",
+                },
+              },
+            ],
+          })}
+        </script>
+      </Helmet>
+
+      {/* Page Content */}
+      <h1 className="mb-4 text-center" style={{ color: "#00b3ff" }}>
+        زراعة الأسنان بالتخدير الكامل
+      </h1>
       <h5 className="text-center mb-5">راحة وأمان أثناء زراعة الأسنان</h5>
       <p className="text-center">
         مركز سليم سمايل – رام الله | ابتسامة متكاملة تبدأ من هنا

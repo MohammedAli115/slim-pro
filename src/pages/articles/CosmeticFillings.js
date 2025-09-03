@@ -1,14 +1,16 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
-// import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 
 const CosmeticFillings = () => {
   return (
     <div className="container py-5 mt-5">
-      {/* Uncomment Helmet block if react-helmet-async is installed */}
-      {/*
+      {/* SEO Tags */}
       <Helmet>
-        <title>الحشوات التجميلية – ترميم الأسنان بجمال طبيعي | مركز سليم سمايل – رام الله</title>
+        <title>
+          الحشوات التجميلية – ترميم الأسنان بجمال طبيعي | مركز سليم سمايل – رام
+          الله
+        </title>
         <meta
           name="description"
           content="تعرف على مميزات وأنواع الحشوات التجميلية (الكومبوزيت، الإنلاي والأونلاي، الزجاجية) في مركز سليم سمايل – رام الله بإشراف د. آية الفراحين، مع تقنيات حديثة ونتائج جمالية طبيعية."
@@ -17,11 +19,60 @@ const CosmeticFillings = () => {
           name="keywords"
           content="الحشوات التجميلية, حشوات الأسنان, ترميم الأسنان, الكومبوزيت, الإنلاي, الأونلاي, الحشوات الزجاجية, مركز سليم سمايل, رام الله"
         />
-      </Helmet>
-      */}
 
-      <h1 className="mb-4 text-center" 
-      style={{ color: "#00b3ff" }}>
+        {/* OG Tags */}
+        <meta
+          property="og:title"
+          content="الحشوات التجميلية – ترميم الأسنان بجمال طبيعي"
+        />
+        <meta
+          property="og:description"
+          content="اكتشف أحدث تقنيات الحشوات التجميلية لإصلاح وترميم الأسنان بجمال طبيعي ودقة عالية في مركز سليم سمايل – رام الله."
+        />
+        <meta
+          property="og:image"
+          content="https://via.placeholder.com/800x450.png?text=Cosmetic+Fillings"
+        />
+        <meta property="og:type" content="article" />
+        <meta property="og:locale" content="ar_AR" />
+
+        {/* FAQ Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "ما هي الحشوات التجميلية؟",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "الحشوات التجميلية هي مواد حديثة مثل الكمبوزيت والإنلاي والأونلاي والزجاجية، تُستخدم لترميم الأسنان مع الحفاظ على جمالها الطبيعي.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "ما الفرق بين الحشوات التجميلية والقديمة المعدنية؟",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "الحشوات التجميلية خالية من الزئبق، مطابقة للون الأسنان، وأكثر جمالية وأمانًا مقارنة بالحشوات المعدنية التقليدية.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "كم تدوم الحشوات التجميلية؟",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "مع العناية الجيدة وزيارة الطبيب بشكل دوري، يمكن أن تدوم الحشوات التجميلية لسنوات طويلة دون مشاكل.",
+                },
+              },
+            ],
+          })}
+        </script>
+      </Helmet>
+
+      {/* Page Content */}
+      <h1 className="mb-4 text-center" style={{ color: "#00b3ff" }}>
         الحشوات التجميلية
       </h1>
       <h5 className="text-center mb-5">ترميم الأسنان بجمال طبيعي</h5>

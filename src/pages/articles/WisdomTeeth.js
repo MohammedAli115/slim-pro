@@ -1,29 +1,91 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { HashLink } from "react-router-hash-link";
-// import { Helmet } from "react-helmet-async";
 
 const WisdomTeeth = () => {
   return (
     <div className="container py-5 mt-5">
-      {/* Uncomment Helmet block if react-helmet-async is installed */}
-      {/*
+      {/* ✅ Helmet SEO */}
       <Helmet>
-        <title>أضراس العقل المطمورة وخلعها الجراحي | مركز سليم سمايل – رام الله</title>
+        <title>
+          أضراس العقل المطمورة وخلعها الجراحي – متى ولماذا؟ | مركز سليم سمايل –
+          رام الله
+        </title>
         <meta
           name="description"
-          content="تعرف على أسباب وطرق خلع أضراس العقل المطمورة جراحياً في مركز سليم سمايل – رام الله بإشراف د. سعدالله عمرو، مع أحدث التقنيات وأعلى درجات الراحة."
+          content="تعرف على أسباب انطمار أضراس العقل، أنواعها، متى يجب خلعها، وخطوات الخلع الجراحي مع نصائح العناية بعد العملية. بإشراف د. سعدالله عمرو – مركز سليم سمايل، رام الله."
         />
         <meta
           name="keywords"
-          content="أضراس العقل, ضرس العقل المطمور, خلع ضرس العقل, الخلع الجراحي, جراحة الفم, مركز سليم سمايل, رام الله"
+          content="أضراس العقل, ضرس العقل المطمور, خلع ضرس العقل, جراحة الفم, مركز سليم سمايل, رام الله, Wisdom Teeth"
         />
-      </Helmet>
-      */}
 
-      <h1 className="mb-4 text-center" 
-      style={{color :"#00b3ff"}}>أضراس العقل المطمورة وخلعها الجراحي – متى ولماذا؟
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="أضراس العقل المطمورة وخلعها الجراحي | مركز سليم سمايل"
+        />
+        <meta
+          property="og:description"
+          content="متى ولماذا يُوصى بخلع ضرس العقل المطمور؟ تعرف على الأسباب، خطوات الخلع الجراحي، ونصائح العناية بعد العملية في مركز سليم سمايل – رام الله."
+        />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:image"
+          content="https://slimsmile.ps/images/wisdom-teeth.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://slimsmile.ps/articles/wisdom-teeth"
+        />
+
+        {/* FAQ Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "ما هي أضراس العقل؟",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "هي آخر أربعة أضراس تظهر عادة بين عمر 17 إلى 25 عامًا، وقد تنطمر جزئيًا أو كليًا بسبب ضيق المساحة أو اتجاه النمو غير الطبيعي.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "متى يُوصى بخلع ضرس العقل المطمور؟",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "يُنصح بالخلع عند وجود ألم متكرر، التهاب، تزاحم الأسنان، تكوّن أكياس أو خراج، أو صعوبة تنظيف الضرس مما يؤدي للتسوس.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "ما هي خطوات الخلع الجراحي؟",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "تشمل تصوير بانورامي، تعقيم وتجهيز المنطقة، شق اللثة، إزالة الضرس (أحيانًا على مراحل)، تنظيف وخياطة الجرح، ووصف أدوية لتخفيف الألم.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "كيف أعتني بعد خلع ضرس العقل؟",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "الراحة لمدة 24-48 ساعة، استخدام كمادات الثلج، تناول الأدوية الموصوفة، تجنب التدخين والمجهود البدني، والاعتماد على الأطعمة الطرية والسوائل الباردة.",
+                },
+              },
+            ],
+          })}
+        </script>
+      </Helmet>
+
+      <h1 className="mb-4 text-center" style={{ color: "#00b3ff" }}>
+        أضراس العقل المطمورة وخلعها الجراحي – متى ولماذا؟
       </h1>
-      <h5 className="text-center mb-5"> راحتك أولويتنا </h5>
+      <h5 className="text-center mb-5">راحتك أولويتنا</h5>
 
       <p className="text-center text-muted">
         بقلم: د. سعدالله عمرو – مركز سليم سمايل لطب وتجميل الأسنان – رام الله

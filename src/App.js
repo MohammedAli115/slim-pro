@@ -22,6 +22,10 @@ import RootCanalTherapy from "./pages/articles/RootCanalTherapy";
 import NotFound from "./Components/NotFound";
 import Periodontics from "./pages/articles/Periodontics";
 import FullAnesthesiaImplant from "./pages/articles/FullAnesthesiaImplant";
+import ArticlesAndResearch from "./Components/ArticlesAndResearch";
+import OralHealthAndHeart from "./pages/articles/OralHealthAndHeart";
+import DigitalImplant from "./pages/articles/DigitalImplant";
+import DentalImmediateImplant from "./pages/articles/DentalImmediateImplant";
 
 function App() {
   return (
@@ -64,6 +68,20 @@ function App() {
           <Route
             path="/articles/full-anesthesia-implant"
             element={<FullAnesthesiaImplant />}
+          />
+          {/* Articles Overview */}
+          <Route path="/articles" element={<ArticlesAndResearch />} />
+          <Route
+            path="/articles/oral-health-and-heart"
+            element={<OralHealthAndHeart />}
+          />
+          <Route
+            path="/articles/guided-implant-surgery"
+            element={<DigitalImplant />}
+          />
+          <Route
+            path="/articles/dental-immediate-implant"
+            element={<DentalImmediateImplant />}
           />
         </Routes>
         <Footer />

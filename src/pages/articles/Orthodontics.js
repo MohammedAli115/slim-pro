@@ -1,28 +1,99 @@
-// import { Helmet } from "react-helmet-async";
-
+import React from "react";
 import { HashLink } from "react-router-hash-link";
+import { Helmet } from "react-helmet-async";
 
 const Orthodontics = () => {
   return (
     <div className="container py-5 mt-5">
-      {/* <Helmet>
-        <title>تقويم الأسنان – ابتسامة صحية وجميلة | عيادة رام الله</title>
+      {/* SEO & OG Tags */}
+      <Helmet>
+        <title>
+          تقويم الأسنان – ابتسامة صحية وجميلة | مركز سليم سمايل – رام الله
+        </title>
         <meta
           name="description"
-          content="تقويم الأسنان يساعد على تحسين وضع الأسنان والفكين للحصول على ابتسامة صحية وجميلة. تعرف على الأنواع، المزايا، العيوب، ومدة العلاج في عيادتنا برام الله."
+          content="تقويم الأسنان يساعد على تحسين وضع الأسنان والفكين للحصول على ابتسامة صحية وجميلة. تعرف على الأنواع، المزايا، العيوب، ومدة العلاج في مركز سليم سمايل – رام الله."
         />
         <meta
           name="keywords"
-          content="تقويم الأسنان, ابتسامة, علاج الأسنان, تجميل الأسنان, تقويم شفاف, تقويم معدني"
+          content="تقويم الأسنان, ابتسامة, علاج الأسنان, تجميل الأسنان, تقويم شفاف, تقويم معدني, تقويم داخلي, تقويم خزفي"
         />
-      </Helmet> */}
 
-      <h1 className="mb-4 text-center" 
-      style={{color : "#00b3ff"}}>تقويم الأسنان </h1>
-      <h5 className="text-center mb-5"> ابتسامتك تبدأ من هنا</h5>
-        <p className="text-center">
-            مركز سليم سمايل – رام الله | ابتسامة متكاملة تبدأ من هنا
-        </p>
+        {/* OG Tags */}
+        <meta
+          property="og:title"
+          content="تقويم الأسنان – ابتسامة صحية وجميلة | مركز سليم سمايل – رام الله"
+        />
+        <meta
+          property="og:description"
+          content="تعرف على أنواع تقويم الأسنان (المعدني، الشفاف، الخزفي، الداخلي) وفوائده ومدة العلاج مع فريق متخصص في مركز سليم سمايل – رام الله."
+        />
+        <meta
+          property="og:image"
+          content="https://via.placeholder.com/800x450.png?text=Orthodontics+Dental+Care"
+        />
+        <meta property="og:type" content="article" />
+        <meta property="og:locale" content="ar_AR" />
+
+        {/* FAQ Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "ما هو تقويم الأسنان؟",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "تقويم الأسنان هو علاج طبي يهدف إلى تصحيح وضع الأسنان والفكين لعلاج مشاكل مثل تزاحم الأسنان، سوء الإطباق، وبروز الأسنان الأمامية.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "ما هي فوائد تقويم الأسنان؟",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "يساعد على تحسين الإطباق والعضّة، تعزيز صحة اللثة، تحسين النطق والمضغ، الوقاية من مشاكل مفصل الفك، وزيادة الثقة بالنفس.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "ما هي أنواع تقويم الأسنان؟",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "تشمل الأنواع: التقويم المعدني التقليدي، التقويم الشفاف (Invisalign)، التقويم الخزفي، والتقويم الداخلي (Lingual Braces).",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "كم تستغرق مدة علاج تقويم الأسنان؟",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "عادة ما تتراوح المدة بين 12 إلى 24 شهرًا حسب الحالة. الحالات البسيطة قد تحتاج وقتًا أقل، خاصة مع التقويم الشفاف.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "متى يُنصح ببدء تقويم الأسنان؟",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "للأطفال يُفضل البدء من عمر 7 سنوات، وللبالغين يمكن البدء في أي وقت طالما أن الأسنان واللثة بصحة جيدة.",
+                },
+              },
+            ],
+          })}
+        </script>
+      </Helmet>
+
+      {/* Page Content */}
+      <h1 className="mb-4 text-center" style={{ color: "#00b3ff" }}>
+        تقويم الأسنان
+      </h1>
+      <h5 className="text-center mb-5">ابتسامتك تبدأ من هنا</h5>
+      <p className="text-center">
+        مركز سليم سمايل – رام الله | ابتسامة متكاملة تبدأ من هنا
+      </p>
       <p>
         تقويم الأسنان هو فرع متخصص من طب الأسنان يهدف إلى تصحيح وضع الأسنان
         والفكّين، وذلك لتحسين الوظيفة الفموية والمظهر الجمالي للابتسامة. يساعد
@@ -99,7 +170,7 @@ const Orthodontics = () => {
         <li>زيارة الطبيب بانتظام لضبط التقويم.</li>
       </ul>
 
-      <h2 className="mt-4">لماذا تختار عيادتنا لتقويم الأسنان؟</h2>
+      <h2 className="mt-4">لماذا تختار مركز سليم سمايل لتقويم الأسنان؟</h2>
       <ul>
         <li>استشارة شاملة باستخدام التصوير ثلاثي الأبعاد.</li>
         <li>خطة علاجية مخصصة لكل مريض.</li>
@@ -108,6 +179,7 @@ const Orthodontics = () => {
         <li>متابعة دقيقة لضمان أفضل النتائج.</li>
         <li>بيئة علاجية مريحة وآمنة.</li>
       </ul>
+
       <footer className="mt-4">
         <HashLink to="/#services" className="btn btn-outline-secondary">
           العودة للخدمات
